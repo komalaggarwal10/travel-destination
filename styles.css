@@ -1,0 +1,160 @@
+:root
+{
+    --dark : black;
+    --light: white;
+    --content: black;
+
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light);
+}
+
+
+#mode-changed
+{
+    cursor: pointer;
+    color: var(--content);
+}
+
+.theme-changed
+{
+    --dark: white;
+    --light: black;
+    --content: white;
+}
+
+.description p{
+    color: var(--content);
+}
+
+
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightpink;
+    
+    width:100%;
+    
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
+.travel{
+    width:60%;
+}
+.description{
+    width:40%;
+    padding: 20px;
+}
+
+.nav{
+    margin:10px;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.mainhead{
+    padding:10px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    place-items: center;
+    margin: 10px;
+    
+   
+}
+.gallery-item{
+    width:96%;
+}
+
+.heading, .more{
+    text-align: center;
+    color: var(--content);
+}
+.pretag{
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid var(--content);
+    margin-top:10px;
+    color: var(--content);
+}
+.side{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #f4f4f4;
+      
+}
+.pretag{
+    display:flex;
+    flex-wrap: wrap;
+}
+/* pre
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+} */
+img{
+    width:100%;
+}
+.more{
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    text-align: center;
+    background-color: lightpink;
+    color: black;
+    padding: 10px 0;
+}
+
+.frames{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+iframe{
+    width: 100%;
+}
+.video-container, .map-container{
+   margin: 20px;
+   width: 95%;
+}
+
+@media (max-width: 851px){
+    .grid-container, .nav, .frames{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+@media (max-width: 1200px){
+    
+    .container{
+        display:block;
+    }
+
+    .description,.travel
+    {
+        width: 100%;
+    }
+
+}

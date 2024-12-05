@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel website, travel guide, your next travel destination">
+    <title>Travel website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="head">
+        <h1 class="mainhead">Explore the World &#x1F30D;</h1>
+        <nav class="navbar">
+
+            <a href="#home" class="nav">Home</a>
+            <a href="#destinations" class="nav">Destinations</a>
+            <a href="#gallery" class="nav">Gallery</a>
+            <a href="#contact" class="nav">Contact</a>
+            <a class="nav" id="mode-changed">Theme</a>
+
+        </nav>
+    </header>
+    <main class="main">
+        <div class="container">
+            <img src="images/travel.jpg" class="travel" alt="travel place">
+            <div class="description">
+                <p>Discover breathtaking destinations, rich cultures and unforgettable experiences
+                    around the world. From
+                    serene beaches to bustling cities, our curated travel guides and tips will inspire your next
+                    adventure.&#x1F3D6;
+                    <br>
+                    Let us help you explore the beauty and wonder of the planet, one destination at a time.&#x1F306
+                </p>
+                <div class="side">
+                    <aside>
+                        <h3>Travel Tips &#x1F64C;</h3>
+                        <ul>
+                            <li>Pack smart</li>
+                            <li>Research your destination</li>
+                            <li>Stay safe and healthy</li>
+                        </ul>
+
+                    </aside>
+                </div>
+                <div class="pretag">
+                    <pre>    Day 1: Arrival and city tour. 
+    Day 2: Beach relaxation.
+    Day 3: Adventure activities.
+    Day 4: Departure.
+                </pre>
+                </div>
+            </div>
+
+        </div>
+        <div class="heading">
+            <h2 class="heading">Photo Gallery &#x1F4CC;</h2>
+        </div>
+        <div class="grid-container">
+
+            <div class="gallery-item"><img src="images/goa image.jpg" alt="Goa"></div>
+            <div class="gallery-item"><img src="images/bali.jpg" alt="Bali"></div>
+            <div class="gallery-item"><img src="images/germany.jpg" alt="Germany"></div>
+            <div class="gallery-item"><img src="images/australia.jpg" alt="Australia"></div>
+
+        </div>
+
+
+    </main>
+    <div class="more">
+        <h1>Know More</h1>
+    </div>
+    <div class="frames">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/lfmg-EJ8gm4" title="Javascript full course" frameborder="0"
+                width="400" height="300"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897592.2407709182!2d75.93433604687496!3d28.503037300000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1930c871fb65%3A0x15458191153b4af6!2sFCM%20Travel%20Solutions!5e0!3m2!1sen!2sin!4v1733317115549!5m2!1sen!2sin"
+                width="400" height="300" style="border:0;" allowfullscreen loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p><span style="font-size:2em; color: red">&copy;</span> 2024 Travel Destination. All Rights Reserved.</p>
+        <p>Our brand name is a registered trademark <span style="font-size:2em; color: black">&reg;</span> of Wanderlust
+            Group.</p>
+        <p>Explore across globe for as low as <span style="font-size:2em; color: lightgreen">&euro;</span> 50 per day
+            and make memories that lasts forever!</p>
+    </footer>
+</body>
+<script>
+    const change = document.getElementById('mode-changed');
+    change.addEventListener('click', () => {
+        document.body.classList.toggle('theme-changed');
+    })
+</script>
+
+</html>
